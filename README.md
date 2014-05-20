@@ -3,11 +3,8 @@ LSAlertView
 
 Customizable alert view replacement for iOS, written in C#. Code is based on the Objective-C version at: https://github.com/wimagguc/ios-custom-alertview
 
-There's some room for improvements:
-- use drawing methods to draw seperator lines, as the current seperator lines (created by UIViews) for buttons are a bit too "thick" due to shadows and the like.
-- probably other aspects as well :)
-
 How to use it? 
+
 1. Create a new LSAlertView
 2. Create and set a subview that is to be contained within the alert view
 3. Add the event handler. Don't forget to decouble the event handler when button is touched.
@@ -55,3 +52,11 @@ The event handler that is being executed on button touch:
 
       _currentViewController.UpdateCaptionText (text);
     }			
+
+---
+
+There's some room for improvements:
+
+- use drawing methods to draw seperator lines, as the current seperator lines (created by UIViews) for buttons are a bit too "thick" due to shadows and the like.
+- probably other aspects as well :)
+
