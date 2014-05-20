@@ -14,7 +14,7 @@ Setting up a new alert view:
     var alertView = new LSAlertView ();
     var remarkView = new EditRemarkView (); // a custom subclass of UIView
     alertView.ContainerView = remarkView; 
-    alertView.ButtonTitles = new string[] { "Cancel", "Save" };
+    alertView.ButtonTitles = new string[] { "Cancel", "Save" }; // button 0 = Cancel; button 1 = Save
     alertView.Show ();
     alertView.ButtonTouched += HandleButtonTouched;
 
