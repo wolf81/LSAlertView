@@ -30,6 +30,7 @@ The event handler that is being executed on button touch:
 
     // the event handler
     void HandleButtonTouched (object sender, ButtonTouchedEventArgs e) {
+      var alertView = sender as LSAlertView;
       alertView.ButtonTouched -= HandleButtonTouched; // decouple event handler
 
       // in this example the first button is just a cancel button
@@ -37,7 +38,6 @@ The event handler that is being executed on button touch:
 			  return;
       }
 
-      var alertView = sender as LSAlertView;
       // typecast the container view to it's original type, so we can access it's properties
       var remarkView = alertView.ContainerView as EditRemarkView; 
       var text = remarkView.Remarks;
